@@ -98,9 +98,11 @@ public class WorkFlowManager {
 				
 		StringBuffer opCodeBuffer = new StringBuffer();
 		for (ShiftAssignment sa : shiftAssignments) {
-			System.out.println("Preparing to perform run Scheduling pipeline for OpCode : " + sa.getOpCode().getOpCodeId()); 
 			opCodeBuffer.append(sa.getOpCode().getOpCodeId() + " | ");
 		}
+		
+		System.out.println("Preparing to perform run Scheduling pipeline for OpCode(s) : " + opCodeBuffer.toString()); 
+		
 		
 		if (wfProps.isDoPattern()) {
 			// custom phase

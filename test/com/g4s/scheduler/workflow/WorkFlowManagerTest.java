@@ -94,9 +94,9 @@ public class WorkFlowManagerTest {
 		
 		WorkFlowProperties wfp = new WorkFlowProperties();
 		
-		wfp.setDoPartitioning(true);
+		wfp.setDoPartitioning(false);
 		wfp.setDoPattern(true);
-		wfp.setDoRun1(false);
+		wfp.setDoRun1(true);
 		wfp.setDoRun2(true);
 		
 		WorkFlowManager wfm  = new WorkFlowManager(wfp);
